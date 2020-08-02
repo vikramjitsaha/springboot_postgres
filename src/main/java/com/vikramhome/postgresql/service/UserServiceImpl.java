@@ -30,8 +30,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private BCryptPasswordEncoder passwordEncoder;
+   // @Autowired
+   // private BCryptPasswordEncoder passwordEncoder;
 
     public UserDetail findByEmail(String email) {
     	UserDetail user = null;
@@ -49,7 +49,7 @@ public class UserServiceImpl implements UserService {
 			user.setFirstName(registration.getFirstName());
 			user.setLastName(registration.getLastName());
 			user.setEmail(registration.getEmail());
-			user.setPassword(passwordEncoder.encode(registration.getPassword()));
+			user.setPassword(null/* passwordEncoder.encode(registration.getPassword()) */);
 			user.setRole("ROLE_USER");
 			user = userRepository.save(user);
 		} catch (Exception e) {
