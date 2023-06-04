@@ -15,7 +15,7 @@
 	<name>VikramHomePostgresql</name>
 	<description>Demo project for Spring Boot with Postgresql</description>
 	
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
