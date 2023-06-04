@@ -14,6 +14,8 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<name>VikramHomePostgresql</name>
 	<description>Demo project for Spring Boot with Postgresql</description>
+	
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -126,6 +128,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<repositories>
+	    <repository>
+	      <id>repository.spring.release</id>
+	      <name>Spring GA Repository</name>
+	      <url>http://repo.spring.io/release</url>
+	    </repository>
+	  </repositories>
 
 	<build>
 		<plugins>
